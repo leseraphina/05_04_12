@@ -12,7 +12,7 @@ body{
 }
 div#wrap{}
 header>div,article>div{
-  width:98%/*100% 1320px */;
+  width:1320px;
   margin: 0 auto;
 }
 article{
@@ -52,7 +52,6 @@ header>div>h1>a{
 }
 nav>ul>li{
   display:inline-block;
-  /* 문제가 없어서 통과 */
   margin-left:40px;
 }
 nav>ul>li>a{
@@ -86,7 +85,6 @@ header>#btn>span{
 #box01>h3{
   position: absolute;
   left:50%; top:50%;
-  /* 문제가 없어서 통과 */
   width:680px; height:280px;
   border:1px solid #fff;
   margin: -140px 0 0 -340px;
@@ -125,7 +123,7 @@ header>#btn>span{
   background-image:url(../images/purple.jpg);
 }
 #box01>p{
-  width:100%/* 1320px */;
+  width:1320px;
   position:absolute;
   background-color:red;
   /* right:269px; */
@@ -147,14 +145,14 @@ header>#btn>span{
 /* #box02 */
 /*  변칙 */
 #box02>div{
-  width:98%/* 980px */;
+  width:980px;
   /* width:987px; */
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between;
 }
 #box02>div>dl{
-  width:27.55102040816327%/* 270px */;
+  width:270px;
   padding:156px 0 60px;
   text-align:center;
   color:#fff;
@@ -179,7 +177,7 @@ header>#btn>span{
 }
 /*  가로 변칙 1103px*/
 #box03>div{
-  width:98%/* 1103px */;
+  width:1103px;
 
 }
 #box03 .box{
@@ -216,14 +214,13 @@ header>#btn>span{
   justify-content: space-between;
 }
 #box04 .box>div{
-  width:36.36363636363636%/* 483px */;
+  width:483px;
 }
 #box04 .box>ul{
- width:43.63636363636364% /* 576px */;
+ width: 576px;
  overflow:hidden;
 }
 #box04 .box>ul>li{
-  /*  float 정리한다. */
   width:80px; height:80px;
   margin: 0 8px 16px;
   border:2px solid #cbc6c5;
@@ -296,7 +293,6 @@ header>#btn>span{
   justify-content:space-between;
 }
 #all>figure{
-  /*  미디어 갤러리 정리 ->vw */
   width:417px;
   margin-bottom:48px;
 }
@@ -326,7 +322,7 @@ header>#btn>span{
   color:#fff;
 }
 #box06>div{
-  width:98%/* 1103px */;
+  width:1103px;
 }
 
 #box06 .box{
@@ -335,7 +331,7 @@ header>#btn>span{
   justify-content: space-between;
 }
 #box06 .box>div{
-  width:40.34451495920218%/* 445px */;
+  width:445px;
 }
 #box06 .box>div>.text{
   margin-bottom:34px;
@@ -361,8 +357,8 @@ header>#btn>span{
 
 
 #box06 .box>form{
-  width:40.34451495920218%/* 445px */;
-  margin-right:5.439709882139619%/* 60px */;
+  width:445px;
+  margin-right:60px;
   background-color:#fff;
   color:#666;
   padding:25px 20px;
