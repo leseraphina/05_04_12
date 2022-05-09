@@ -1,2 +1,45 @@
+/* 기본이 들어가기 */
+@media screen and (min-width:1320px){
+  header>div,article>div{
+    width:1320px;
+  }
+  #box01>p{
+    width:1320px;
+  }
+  #box02>div{
+    width: 980px;
+  }
+  #box03>div{
+    width:1103px;
+  
+  }
+  #box06>div{
+    width: 1103px;
+  }
+
+}
+
+@media screen and (max-width:1319px) and (min-width:1103px){
+  #box02>div{
+    width: 980px;
+  }
+  #box03>div{
+    width:1103px;
+  
+  }
+  #box06>div{
+    width: 1103px;
+  }
+}
+
+@media screen and (max-width:1102px) and (min-width:980px){
+  #box02>div{
+    width: 980px;
+  }
+}
+@media screen and (max-width:979px) and (min-width:580px){
+
+}
+@media screen and (max-width:579px){}
 
 /*# sourceMappingURL=/index_media.8cd1eeae.css.map */

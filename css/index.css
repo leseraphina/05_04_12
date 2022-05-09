@@ -69,7 +69,7 @@ header>#btn{
   flex-direction: column;
   flex-wrap:wrap;
   justify-content: space-between;
-
+  display:none;
 }
 header>#btn>span{
   display:block;
@@ -81,7 +81,9 @@ header>#btn>span{
 #box01{
   padding: 0;
   width:100%;
-  height:calc(100vh - 71px);}
+  height:calc(100vh - 71px);
+  overflow:hidden;
+}
 
 #box01>h3{
   position: absolute;
