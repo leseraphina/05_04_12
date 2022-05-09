@@ -409,7 +409,47 @@ header>#btn>span{
 }
 
 /* aside */
+/* 168 */
+aside .sument{
+  position:fixed;
+  top:50%;
+  right:37px;
+  margin-top: -84px;
+}
+aside .sument>li{
+  margin-bottom:10px;
+}
+aside .sument>li>a{
+  display:block;
+  width:18px; height:18px;
+  border-radius:50%;
+  text-indent:-9999px;
+  background-color:red;
+}
+aside .sument>li>a:hover{
+  background-color:green;
+}
 
+aside .top{
+  position:fixed;
+  right:22px;
+  bottom:126px;
+  width:35px;
+  height:34px;
+  line-height:1;
+  font-size:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  background-color:orange;
+}
+footer{
+  padding:40px 0;
+  text-align:center;
+  color:#fff;
+  background-color:#333333;
+}
 
 
 /*# sourceMappingURL=/css.967bad95.css.map */
