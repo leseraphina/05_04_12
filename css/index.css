@@ -174,7 +174,7 @@ header>#btn>span{
 #box03{
   background-color:#e8e8e8;
 }
-/*  가로 변칙 */
+/*  가로 변칙 1103px*/
 #box03>div{
   width:1103px;
 
@@ -311,4 +311,102 @@ header>#btn>span{
 #box05 .gallery>p.next{
   right:0;
 }
+
+/* #box06 */
+#box06{
+  background-color:#9c9491;
+  color:#fff;
+}
+#box06 a{
+  color:#fff;
+}
+#box06>div{
+  width:1103px;
+}
+
+#box06 .box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+#box06 .box>div{
+  width:445px;
+}
+#box06 .box>div>.text{
+  margin-bottom:34px;
+}
+#box06 .box>div>dl{
+  margin-bottom:26px;
+}
+#box06 .box>div>dl>dt{
+  padding-left:34px;
+  background:url('../images/contact_icon_01.png') no-repeat left center;
+  background-color:24px;
+}
+#box06 .box>div>dl:nth-child(4)>dt{
+  background-image:url('../images/contact_icon_02.png');
+}
+#box06 .box>div>dl:nth-child(5)>dt{
+  background-image:url('../images/contact_icon_03.png');
+}
+#box06 .box>div>dl>dd{
+  padding-left:34px;
+}
+
+
+
+#box06 .box>form{
+  width:445px;
+  margin-right:60px;
+  background-color:#fff;
+  color:#666;
+  padding:25px 20px;
+  box-sizing:border-box;
+}
+#box06 .box>form ul{}
+#box06 .box>form ul>li{
+  margin-bottom:20px;
+}
+#box06 .box>form ul>li>label{
+  display:block;
+  line-height:1;
+  margin-bottom:10px;
+}
+#box06 .box>form ul>li>input{
+  padding:0; margin:0;
+  width:100%;
+  box-sizing:border-box;
+  border:none;
+  line-height:43px;
+  text-indent: 20px;
+  background-color:#eae4e4;
+  border-radius:5px;
+  color:#666;
+}
+#box06 .box>form ul>li>textarea{
+  padding:0; margin:0;
+  width:100%;
+  height:120px;
+  box-sizing:border-box;
+  border:none;
+  line-height:20px;
+  text-indent: 20px;
+  background-color:#eae4e4;
+  border-radius:5px;
+  color:#666;
+}
+#box06 .box>form p{}
+#box06 .box>form p>input{
+  padding:0; margin:0;
+  width:100%;
+  box-sizing:border-box;
+  border:none;
+  background-color:#eae4e4;
+  line-height:43px;
+  border-radius:5px;
+  font-size:18px;
+  color:#666;
+}
+
+/* aside */
 
