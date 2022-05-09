@@ -29,6 +29,9 @@ article .title{
   line-height: 1.5em;
   margin-bottom:50px;
 }
+img{
+  width:100%;
+}
 /* article .text{} */
 
 /* header */
@@ -247,6 +250,68 @@ header>#btn>span{
   background-image:url('/sass.e93f383e.png');}
 #box04 .box>ul>li:nth-child(12){
   background-image:none;}
+
+/* #box05 */
+#box05{
+  padding-bottom:30px;
+  background-color:#c3c3c3;
+  text-align:center;
+}
+#box05>div>p.text{
+  margin-bottom:34px;
+}
+#box05>div>ul{
+  display:flex;
+  justify-content: center;
+  margin-bottom:34px;
+}
+#box05>div>ul>li{
+  padding:0 10px;
+  border-left:1px solid #fff;
+  line-height:1;
+}
+#box05>div>ul>li:first-child{
+  border-left:none;
+}
+#box05>div>ul>li>a{
+  color:#fff;
+}
+
+/* gallery */
+#box05 .gallery{
+  /* width:auto; */
+  position:relative;
+}
+#show{
+  /* width:auto; */
+}
+#all{
+  /* width:auto; */
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+#all>figure{
+  width:417px;
+  margin-bottom:48px;
+}
+/*  버튼 */
+#box05 .gallery>p{
+  position:absolute;
+  width:30px;
+  height:30px;
+  top:50%;
+  margin-top:-15px;
+  background-color:red;
+  display:none;
+}
+#box05 .gallery>p.prev{
+  left:0;
+}
+#box05 .gallery>p.next{
+  right:0;
+}
+
 
 
 /*# sourceMappingURL=/css.967bad95.css.map */
