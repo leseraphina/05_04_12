@@ -136,7 +136,64 @@
  text-align:justify;
 }
 
-/* 29 쉬는시간 */
+#box04 .box{
+  display:block;
+}
+#box04 .box>div{
+  width:90.51020408163265%;
+  text-align:center;
+  margin-bottom:50px;
+}
+#box04 .box>ul{
+ width: 576px;
+ margin: 0 auto;
+}
+
+/* box05 */
+
+/* gallery */
+#box05 .gallery{
+  width:96vw;
+  margin: 0 auto;
+}
+#show{
+  width:78vw;
+  margin: 0 auto;
+  overflow:hidden;}
+#all{
+  /* display:flex;
+  flex-wrap:wrap; */
+  width:156vw;
+  justify-content:flex-start;}
+#all>figure{
+  /*  미디어 갤러리 정리 ->vw */
+  width:24vw;
+  margin:0 1vw 17px;
+}
+/*  버튼 */
+#box05 .gallery>p{
+  position:absolute;
+  width:1.5vw;
+  height:1.5vw;
+  top:40%;
+  margin-top:-0.75vw;
+  background-color:red;
+  display:block;
+  text-indent:-9999px;
+}
+#box05 .gallery>p.prev{
+  left:2vw;
+}
+#box05 .gallery>p.next{
+  right:2vw;
+}
+
+
+
+
+
+
+/*  */
 }
 @media screen and (max-width:579px){}
 
