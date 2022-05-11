@@ -187,12 +187,52 @@
 #box05 .gallery>p.next{
   right:2vw;
 }
+/* box06 */
+#box06>div{
+  width:100%/* 1103px */;
+}
+#box06 .box{
+  display:block;
+}
+#box06 .box>div{
+  width:100%;
+  margin: 0 auto 45px;
+  text-align:center;
 
+}
+#box06 .box>div>.text{
+  width:90.51020408163265%;
+  margin-bottom:0px;
+  margin: 0 auto;
+}
+#box06 .box>div>dl{
+  margin-bottom:0;
+  text-align:left;
+  width:77.85714285714286%;
+  margin: 0 auto;
+}
+#box06 .box>div>dl>dt{
+ display:inline;
+  background-size:18px;
+}
+#box06 .box>div>dl>dd{
+  padding-left:0px;
+  display:inline;
+}
 
+#box06 .box>form{
+  width:77.85714285714286%/* 445px */;
+  margin-right:0;
+  margin: 0 auto;
 
-
-
-
+}
+/* aside */
+aside .sument{
+  display:none;
+}
+aside .top{
+  display:none;
+}
 /*  */
 }
 @media screen and (max-width:579px){}
