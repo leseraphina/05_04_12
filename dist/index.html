@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="/reset.dc9ff4e8.css">
   <link rel="stylesheet" href="/css.967bad95.css">
   <link rel="stylesheet" href="/index_media.8cd1eeae.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer="" src="/js.00a46daa.js"></script>
 <script src="/reset.dc9ff4e8.js"></script><script src="/css.967bad95.js"></script><script src="/index_media.8cd1eeae.js"></script></head>
 <body>
   <div id="wrap">
@@ -20,13 +22,13 @@
         <!-- nav -->
         <nav>
           <h2 class="hide">메인내비게이션</h2>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Info</a></li>
-            <li><a href="#">Skill</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+  <ul>
+            <li><a href="#wrap">Home</a></li>
+            <li><a href="#box02">About</a></li>
+            <li><a href="#box03">Info</a></li>
+            <li><a href="#box04">Skill</a></li>
+            <li><a href="#box05">Work</a></li>
+            <li><a href="#box06">Contact</a></li>
           </ul>
           <p class="close"></p>
         </nav>
@@ -240,5 +242,82 @@
       </small>
     </footer>
   </div>
+  <script>$(function () {
+  // 현재 브라우저 사이즈 -> 조건
+  var windowW = $(window).width();
+  console.log(windowW);
+
+  if (windowW >= 1320) {
+    nav();
+    subMenu();
+    topScroll();
+  } else if (windowW < 1320 && windowW >= 980) {} else if (windowW < 980 && windowW >= 580) {
+    mobileNav();
+  } else if (windowW < 580) {} //  함수 옮기기
+  //  nav
+
+
+  function nav() {
+    $('nav>ul>li>a').on('click', function (e) {
+      var navHref = $(this).attr('href');
+      var aPos = $(navHref).offset().top;
+      console.log(aPos);
+      $('html,body').animate({
+        scrollTop: aPos
+      }, 800); //  
+
+      return false;
+    });
+  }
+
+  function subMenu() {
+    $('aside ul>li>a').on('click', function (e) {
+      var navHref = $(this).attr('href');
+      var aPos = $(navHref).offset().top;
+      console.log(aPos);
+      $('html,body').animate({
+        scrollTop: aPos
+      }, 800); //  
+
+      return false;
+    });
+  }
+
+  function topScroll() {
+    $('aside .top').on('click', function (e) {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 800);
+    });
+  } // table, mobile
+
+
+  function mobileNav() {
+    $('header p#btn').on('click', function (e) {
+      $('nav').animate({
+        left: '0'
+      }, 800);
+      $(this).hide();
+    });
+    $('nav>ul>li>a').on('click', function (e) {
+      var navHref = $(this).attr('href');
+      var aPos = $(navHref).offset().top;
+      $('nav').css('left', '-480px');
+      console.log(aPos);
+      $('html,body').animate({
+        scrollTop: aPos
+      }, 800);
+      $('header p#btn').show(); //  
+
+      return false;
+    });
+    $('nav .close').on('click', function (e) {
+      $('nav').animate({
+        left: '-480px'
+      }, 300);
+      $('header p#btn').show();
+    });
+  }
+});</script>
 </body>
 </html>
