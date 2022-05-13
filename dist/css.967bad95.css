@@ -163,9 +163,9 @@ header>#btn>span{
   color:#fff;
   background:#9c9491 url('/header_icon_01.5e5c9225.png') no-repeat center 65px;
 }
-#box02>div>dl:nth-child(2){
-  background-image:url('/header_icon_02.da9b324a.png');}
 #box02>div>dl:nth-child(3){
+  background-image:url('/header_icon_02.da9b324a.png');}
+#box02>div>dl:nth-child(4){
   background-image:url('/header_icon_03.1620e5ae.png');}
 #box02>div>dl>dt{
     margin-bottom:44px;}

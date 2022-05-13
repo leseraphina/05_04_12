@@ -11,7 +11,7 @@
   }
   #box03>div{
     width:1103px;
-  
+
   }
   #box06>div{
     width: 1103px;
@@ -25,7 +25,7 @@
   }
   #box03>div{
     width:1103px;
-  
+
   }
   #box06>div{
     width: 1103px;
@@ -132,7 +132,7 @@
   margin: 0 auto;
   text-align:center;
 }
-#box03 .box>div>.text{ 
+#box03 .box>div>.text{
  text-align:justify;
 }
 
@@ -234,27 +234,37 @@ aside .top{
 /*  */
 }
 @media screen and (max-width:579px){
+  header>div,article>div{
+    width:90vw;
+  }
   header>div{
     display:block;
     text-align:center;
+  }
+  #wrap>header{
+    padding:10px 0;
     }
-    header>div>h1>a{
-      font-family:'나눔고딕',sans-serif;
-      color:#fff;
-      font-size:30px;
-    }
-    nav{
-      position:fixed;
-      /* left:-100%; */
-      left:0;
+/* nav */
+nav{
+  position:fixed;
+      left:-100%;
+      /* left:0; */
       top:0;
       width:100%;
       height:100%;
       background-color:rgba(0,0,0,0.8);
       z-index:999;
-      padding:36px;
-      box-sizing:border-box;
-    }
+      padding:12.5vh;
+  box-sizing:border-box;
+  }
+  nav>.close{
+    position:absolute;
+    width:25px;
+    height:24px;
+    right:10px;
+    top:10px;
+    background-color:red;
+  }
     nav>ul{
       width:100%; height:100%;
       display:flex;
@@ -262,10 +272,206 @@ aside .top{
       align-items:center;
       flex-direction: column;
     }
-    nav>ul>li{
+  nav>ul>li{
       display:block;
+      width:100%;
       /* 문제가 없어서 통과 */
       margin-left:0;
+     border-bottom:1px solid #fff;
+     box-sizing:border-box;
     }
+  nav>ul>li:first-child{
+    border-top: 1px solid #fff;
+  }
+  nav>ul>li>a{
+      font-size:24px;
+      line-height:12.5vh;
+    }
+  header>#btn{
+    display:block;}
+/* box01 */
+#box01>p{ display:none;}
+/* h3*/
+#box01>h3{
+  position: absolute;
+  left:0; top:40vh;
+  /* 문제가 없어서 통과 */
+  width:100%; height:auto;
+  border:none;
+  line-height:10vh;
+  display:block;
+  margin: 0;
+  color:#fff;
+  text-align:center;
+  /* vw,rem */
+  font-size:4vh;
+}
+/* box02 */
+#box02{
+  padding:36px 0;
+}
+#box02>div{
+  width:90vw;
+  /* width:987px; */
+  display:block;
+}
+#box02>div>dl{
+  width:auto;
+  padding:25px 0;
+  text-align:center;
+  color:#fff;
+  background:none;
+  background-color:#9c9491;
+  margin-bottom:25px;
+}
+#box02>div>dl:nth-child(3){
+  background-image:none;}
+#box02>div>dl:nth-child(4){
+  background-image:none;
+  margin-bottom:0;
+}
+#box02>div>dl>dt{
+  margin-bottom:20px;}
+#box02>div>dl>dd{
+  width:70vw;
+  text-align:center;
+}
+
+/* box03 */
+#box03>div{
+  width:90vw;
+}
+#box03 .box{
+  /* width:auto; */
+  padding-left:0;
+  position:static;
+}
+#box03 .box>figure{
+  width:50vw;
+  position:static;
+  margin: 0 auto 30px
+}
+#box03 .box>div>.title{
+  text-align:center;
+  margin-bottom:30px;
+}
+#box03 .box>div>.text{
+  margin-bottom:30px;
+  text-align:justify;
+}
+#box03 .box>div>.btn{
+  text-align:center;
+}
+
+/* box04 */
+#box04 .box{
+  display:block;
+}
+#box04 .box>div{
+  width:auto;
+  margin-bottom:30px;
+}
+#box04 .box>div .title{
+  text-align:center;
+  margin-bottom:30px;
+}
+/* 882 */
+
+#box04 .box>ul{
+ width:91.95402298850575% /* 480 */;
+ margin: 0 auto;
+ overflow:hidden;
+}
+
+/* #box05 */
+
+/* gallery */
+#box05 .gallery{
+  /* width:auto; */
+  position:relative;
+}
+#show{
+  width:85vw;
+  margin: 0 auto;
+  overflow:hidden;
+  /* width:auto; */
+}
+#all{
+  width:255vw;
+  /* width:auto; */
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+#all>figure{
+  /*  미디어 갤러리 정리 ->vw */
+  width:37.5vw/* 417px */;
+  margin-bottom:0;
+  margin: 0 2.5vw ;
+}
+/*  버튼 */
+#box05 .gallery>p{
+  position:absolute;
+  width:5vw;
+  height:5vw;
+  top:40%;
+  margin-top:-15px;
+  display:block;
+}
+#box05 .gallery>p.prev{
+  left:-2.5vw;
+}
+#box05 .gallery>p.next{
+  right:-2.5vw;
+}
+/* box06 */
+
+#box06>div{
+  width:90vw/* 1103px */;
+}
+
+#box06 .box{
+  display:block;
+
+}
+#box06 .box>div{
+  width:auto/* 445px */;
+}
+#box06 .box>div>.title{
+  text-align:center;
+  margin-bottom:30px;
+}
+#box06 .box>div>.text{
+  margin-bottom:34px;
+}
+#box06 .box>div>dl{
+  margin-bottom:5px;
+}
+#box06 .box>div>dl>dt{
+  display:inline;
+  background-size:20px;
+}
+#box06 .box>div>dl>dd{
+  padding-left:0px;
+  display:inline;
+}
+#box06 .box>form{
+  width:auto/* 445px */;
+  margin-right:0/* 60px */;
+  padding:5vw;
+}
+
+#box06 .box>form ul>li{
+  margin-bottom:5vw;
+}
+#box06 .box>form ul>li>label{
+  margin-bottom:2.5vw;
+}
+aside .sument{
+display:none;
+}
+aside .top{
+display:none;
+}
 
 }
